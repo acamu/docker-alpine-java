@@ -36,12 +36,12 @@ Who begin by that:
     RUN apk upgrade
     RUN apk add wget
 
-**2. Add JDK Openjdk jre
+**2. Add JDK Openjdk jre**
 
     RUN apk add openjdk8-jre-base --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted \
     && rm -rf /var/cache/apk/*
     
- **2 bis . Add Oracle JDK
+**2 bis . Add Oracle JDK**
  
     RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates unzip && cd "/tmp" && wget --header "Cookie: oraclelicense=accept-securebackup-cookie;" "http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION}u${JAVA_UPDATE}-b${JAVA_BUILD}/${JAVA_PATH}/jdk-${JAVA_VERSION}u${JAVA_UPDATE}-linux-x64.tar.gz" && tar -xzf "jdk-${JAVA_VERSION}u${JAVA_UPDATE}-linux-x64.tar.gz" && mkdir -p "/usr/lib/jvm" && mv "/tmp/jdk1.${JAVA_VERSION}.0_${JAVA_UPDATE}" "/usr/lib/jvm/java-${JAVA_VERSION}-oracle" && ln -s "java-${JAVA_VERSION}-oracle" "$JAVA_HOME" && ln -s "$JAVA_HOME/bin/"* "/usr/bin/" && rm -rf "$JAVA_HOME/"*src.zip && wget --header "Cookie: oraclelicense=accept-securebackup-cookie;" "http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION}/jce_policy-${JAVA_VERSION}.zip" && unzip -jo -d "${JAVA_HOME}/jre/lib/security" "jce_policy-${JAVA_VERSION}.zip" && rm "${JAVA_HOME}/jre/lib/security/README.txt" && apk del build-dependencies && rm "/tmp/"*
 
