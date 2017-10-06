@@ -58,7 +58,8 @@ Who begin by that:
 
 
 **5. Add your Java/SpringBoot component**
-	
+
+#The gs-spring-boot-docker-0.1.0.jar must be in the same directory as the docker file
     ADD gs-spring-boot-docker-0.1.0.jar app.jar
     RUN sh -c 'touch /app.jar'
     #Set your entrypoint
