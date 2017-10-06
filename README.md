@@ -53,3 +53,11 @@ Who begin by that:
     $ docker build -f Dockerfile -t demo/spring-java:8 --rm=true .
 
 The "." is mandatory :) do not forget it !!!!
+
+
+## C - RUN the Image freshly created
+    $ docker run -p 8080:8080 -t demo/spring-java:8
+
+Or
+
+    $ docker run -p 8080:8080 -t demo/spring-java:8 <map Volume for log for example>
