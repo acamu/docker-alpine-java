@@ -15,7 +15,8 @@ We will create a docker image for a JAVA Application (Simple or not)
 
 
 
-## A - Create a docker file who begin by that
+## A - Create a docker file 
+Who begin by that:
 
 \# Dockerfile
 FROM  alpine:3.5
