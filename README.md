@@ -47,3 +47,9 @@ Who begin by that:
 
     ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
+
+## B - Create docker image from docker file
+
+$ docker build -f Dockerfile -t demo/spring-java:8 --rm=true .
+
+    The "." is mandatory :) do not forget it !!!!
