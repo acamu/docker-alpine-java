@@ -18,12 +18,12 @@ We will create a docker image for a JAVA Application (Simple or not)
 ## A - Create a docker file 
 Who begin by that:
 
-\# Dockerfile
-FROM  alpine:3.5
+    # Dockerfile
+    FROM  alpine:3.5
 
-MAINTAINER  Author Name <author@email.com>
+    MAINTAINER  Author Name <author@email.com>
 
-ENV JAVA_VERSION 8u31
+    ENV JAVA_VERSION 8u31
 
-ENV BUILD_VERSION b13
+    ENV BUILD_VERSION b13
 
