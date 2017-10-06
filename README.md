@@ -45,5 +45,5 @@ Who begin by that:
 
 **4. Add your Java/SpringBoot component**
 
-
+    ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
