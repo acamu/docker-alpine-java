@@ -34,6 +34,8 @@ Who begin by that:
 
 **2. Add JDK
 
+    RUN apk add openjdk8-jre-base --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted \
+    && rm -rf /var/cache/apk/*
 
 **3. Expose Container VOLUME**
 
