@@ -50,6 +50,6 @@ Who begin by that:
 
 ## B - Create docker image from docker file
 
-$ docker build -f Dockerfile -t demo/spring-java:8 --rm=true .
+    $ docker build -f Dockerfile -t demo/spring-java:8 --rm=true .
 
-    The "." is mandatory :) do not forget it !!!!
+The "." is mandatory :) do not forget it !!!!
