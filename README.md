@@ -22,8 +22,12 @@ Who begin by that:
     FROM  alpine:3.5
 
     MAINTAINER  Author Name <author@email.com>
-
     ENV JAVA_VERSION 8u31
-
     ENV BUILD_VERSION b13
+
+
+    #Update the package repository
+    #Upgrading system on alpine
+    RUN apk upgrade
+    RUN apk add wget
 
