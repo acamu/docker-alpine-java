@@ -14,3 +14,15 @@ We will create a docker image for a JAVA Application (Simple or not)
 - for execute script Docker deamon must be started : dockerd with  --iptables=false
 
 
+
+## A - Create a docker file who begin by that
+
+\# Dockerfile
+FROM  alpine:3.5
+
+MAINTAINER  Author Name <author@email.com>
+
+ENV JAVA_VERSION 8u31
+
+ENV BUILD_VERSION b13
+
