@@ -38,3 +38,12 @@ Who begin by that:
     VOLUME /app
     VOLUME /tmp
 
+**3. Clean your image**
+
+    RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+
+**4. Add your Java/SpringBoot component**
+
+
+
