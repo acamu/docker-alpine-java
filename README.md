@@ -24,7 +24,13 @@ Who begin by that:
     MAINTAINER  Author Name <author@email.com>
     ENV JAVA_VERSION 8u31
     ENV BUILD_VERSION b13
-
+    
+    ENV JAVA_VERSION=8 
+    JAVA_UPDATE=144 
+    JAVA_BUILD=01
+    JAVA_PATH=090f390dda5b47b9b721c7dfaa008135    
+    JAVA_HOME=/usr/lib/jvm/default-jvm
+   
 
 **1. Update the package repository**
 
