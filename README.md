@@ -26,14 +26,15 @@ Who begin by that:
     ENV BUILD_VERSION b13
 
 
-1. Update the package repository
+**1. Update the package repository**
 
     #Upgrading system on alpine
     RUN apk upgrade
     RUN apk add wget
 
-2. Expose Container VOLUME
+**2. Expose Container VOLUME**
 
+    #Expose volume
     VOLUME /app
     VOLUME /tmp
 
