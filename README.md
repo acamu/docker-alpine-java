@@ -26,8 +26,10 @@ Who begin by that:
     ENV BUILD_VERSION b13
 
 
-    #Update the package repository
+Update the package repository
+
     #Upgrading system on alpine
     RUN apk upgrade
     RUN apk add wget
+
 
