@@ -32,18 +32,21 @@ Who begin by that:
     RUN apk upgrade
     RUN apk add wget
 
-**2. Expose Container VOLUME**
+**2. Add JDK
+
+
+**3. Expose Container VOLUME**
 
     #Expose volume
     VOLUME /app
     VOLUME /tmp
 
-**3. Clean your image**
+**4. Clean your image**
 
     RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
-**4. Add your Java/SpringBoot component**
+**5. Add your Java/SpringBoot component**
 
     ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
