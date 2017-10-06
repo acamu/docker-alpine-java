@@ -74,7 +74,7 @@ Who begin by that:
 The "." is mandatory :) do not forget it !!!!
 
 
-## C - RUN the Image freshly created
+## C - RUN the docker image freshly created
     $ docker run -p 8080:8080 -t demo/spring-java:8
 
 Or
